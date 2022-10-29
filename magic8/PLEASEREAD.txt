@@ -1,0 +1,3 @@
+This was both a test for my BATCH skills and for Visual Studio Code. Please do not tamper with the files in .vs. If you wish to tamper, please to it to files in "stor"
+
+to add custom answers, change data in answers folder
