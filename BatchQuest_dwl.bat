@@ -18,12 +18,12 @@ exit
 
 ::Download Process
 :dwl
-
-setlocal enabledelayedexpansion
+title BatchQuestDownloader
 
     echo Hello!
     echo.
     echo Welcome to the BatchQuest downloader!
+    setlocal enabledelayedexpansion
     echo If you are a developer, (or would just like to use a non-verified branch of the game) please enter the password given to you. Otherwise, please enter 1.
     set /p pass=
 
@@ -31,12 +31,15 @@ setlocal enabledelayedexpansion
 ::It is merly here to make sure people just wanting to play the game won't accidently download a possibly broken copy.
 
     if '%pass%'=='emZ0' (
+        
+        setlocal disabledelayedexpansion
         echo Correct password. Welcome!
         echo.
         echo Please enter the name of the branch you would like to download. !CASE SENSITIVE!
         echo.
         set /p dwlName=
         echo.
+        setlocal enabledelayedexpansion
         echo Attempting to download from the !dwlName! branch . . .
     
         powershell -Command "Invoke-WebRequest https://github.com/ZeroPointNothing/BatchQuest/archive/refs/heads/!dwlName!.zip -Outfile Content.zip"
@@ -46,7 +49,9 @@ setlocal enabledelayedexpansion
         del Content.zip
         rename Content BatchQuest
         echo.
+        setlocal disabledelayedexpansion
         echo Complete!
+        setlocal enabledelayedexpansion
         pause
         exit
     )
