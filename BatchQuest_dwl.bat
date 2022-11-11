@@ -1,4 +1,7 @@
 @echo off
+
+::TODO: Add branch choser to downloader.
+
 ::Is the repo ready?
 set ready=true
 ::Change 'ready' when the downloader can be used.
