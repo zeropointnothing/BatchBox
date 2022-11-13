@@ -119,14 +119,32 @@ goto res
 
 :x4
 cls
-echo ---+-----
-echo x%x%y%y%
+if '%y%'=='0' goto x4y0
+if '%y%'=='-1' goto x4y-1
+if '%y%'=='-2' goto x4y-2
+if '%y%'=='-3' goto x4y-3
+if '%y%'=='-4' goto x4y-4
+if '%y%'=='-5' goto x4y-5
+if '%y%'=='-6' goto x4y-6
+if '%y%'=='-7' goto x4y-7
+if '%y%'=='-8' goto x4y-8
+if '%y%'=='1' goto yMin
+if '%y%'=='-9' goto yMax
 goto res
 
 :x5
 cls
-echo ----+----
-echo x%x%y%y%
+if '%y%'=='0' goto x5y0
+if '%y%'=='-1' goto x5y-1
+if '%y%'=='-2' goto x5y-2
+if '%y%'=='-3' goto x5y-3
+if '%y%'=='-4' goto x5y-4
+if '%y%'=='-5' goto x5y-5
+if '%y%'=='-6' goto x5y-6
+if '%y%'=='-7' goto x5y-7
+if '%y%'=='-8' goto x5y-8
+if '%y%'=='1' goto yMin
+if '%y%'=='-9' goto yMax
 goto res
 
 :x6
@@ -580,9 +598,275 @@ goto res
 
 ::TODO - Finish coding x-axis 4, 5, 6, 7, 8, and 9.
 
+:x4y0
+echo ---+-----
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo x%x%y%y%
+goto res
 
 
+:x4y-1
+cls
+echo ---------
+echo ---+-----
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo x%x%y%y%
+goto res
 
+
+:x4y-2
+cls
+echo ---------
+echo ---------
+echo ---+-----
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo x%x%y%y%
+goto res
+
+
+:x4y-3
+cls
+echo ---------
+echo ---------
+echo ---------
+echo ---+-----
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo x%x%y%y%
+goto res
+
+
+:x4y-4
+cls
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---+-----
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo x%x%y%y%
+goto res
+
+
+:x4y-5
+cls
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---+-----
+echo ---------
+echo ---------
+echo ---------
+echo x%x%y%y%
+goto res
+
+
+:x4y-6
+cls
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---+-----
+echo ---------
+echo ---------
+echo x%x%y%y%
+goto res
+
+
+:x4y-7
+cls
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---+-----
+echo ---------
+echo x%x%y%y%
+goto res
+
+
+:x4y-8
+cls
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---+-----
+echo x%x%y%y%
+goto res
+
+:: [x5] ----------------------------------------------------------------------------------------------
+
+:x5y0
+echo ----+----
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo x%x%y%y%
+goto res
+
+
+:x5y-1
+cls
+echo ---------
+echo ----+----
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo x%x%y%y%
+goto res
+
+
+:x5y-2
+cls
+echo ---------
+echo ---------
+echo ----+----
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo x%x%y%y%
+goto res
+
+
+:x5y-3
+cls
+echo ---------
+echo ---------
+echo ---------
+echo ----+----
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo x%x%y%y%
+goto res
+
+
+:x5y-4
+cls
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ----+----
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo x%x%y%y%
+goto res
+
+
+:x5y-5
+cls
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ----+----
+echo ---------
+echo ---------
+echo ---------
+echo x%x%y%y%
+goto res
+
+
+:x5y-6
+cls
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ----+----
+echo ---------
+echo ---------
+echo x%x%y%y%
+goto res
+
+
+:x5y-7
+cls
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ----+----
+echo ---------
+echo x%x%y%y%
+goto res
+
+
+:x5y-8
+cls
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ---------
+echo ----+----
+echo x%x%y%y%
+goto res
+
+:: [x6] ----------------------------------------------------------------------------------------------
 
 
 
