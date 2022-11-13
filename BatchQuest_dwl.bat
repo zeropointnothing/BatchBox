@@ -42,7 +42,7 @@ title BatchQuestDownloader
         setlocal enabledelayedexpansion
         echo Attempting to download from the !dwlName! branch . . .
     
-        powershell -Command "Invoke-WebRequest https://github.com/ZeroPointNothing/BatchQuest/archive/refs/heads/!dwlName!.zip -Outfile Content.zip"
+        powershell -Command "Invoke-WebRequest https://github.com/ZeroPointNothing/BatchQuest/archive/refs/heads/!dwlName!.zip -Outfile Content.zip" || goto err
         timeout 1 /nobreak >nul
         powershell -Command "Expand-Archive Content.zip"
         timeout 1 /nobreak >nul
@@ -90,6 +90,15 @@ title BatchQuestDownloader
     cls
     goto dwl
 
+:err
+cls
 
+color 4
+echo --ERROR--
+echo.
+echo The branch name you entered does not exist or is not correct. Please make sure you have spelt it correctly and that it does, indeed exist.
+echo.
+pause
+exit
 
 
