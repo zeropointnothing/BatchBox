@@ -3,13 +3,13 @@ title YouTube Search
 color 4
 echo.
 echo -Welcome to YouTube! What would you like to search today?- [YTS Coded By ZeroPointNothing]
-echo [Add + wherever a space is meant to be or the search will not funtion correctly]
 echo.
 timeout 1 /nobreak >nul
 :query
 set /p que="Awaiting Query . . .     "
 
-echo - Attempting to search for %que% with your default browser. Please wait. . .
+echo - Attempting to search for '%que%' with your default browser. Please wait. . .
+set que=%que: =+%
 
 timeout 1 /nobreak >nul
 
