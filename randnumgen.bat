@@ -7,11 +7,9 @@ echo - RANDOM NUMBER GENERATOR [Coded By ZeroPointNothing]-
 echo.
 set /p max="INPUT MAX OUTPUT (will generate three)   -"
 
+set /a max+=1
 :start
 
-set /a num=%RANDOM% %%%max%
-
-echo %num%
 
 set /a num=%RANDOM% %%%max%
 
@@ -21,7 +19,17 @@ set /a num=%RANDOM% %%%max%
 
 echo %num%
 
-pause
+set /a num=%RANDOM% %%%max%
+
+echo %num%
+
+echo.
+echo Type exit to stop.
+echo.
+set /p opt=
+if /I '%opt%'=='exit' (
+    exit
+)
 
 goto start
 
